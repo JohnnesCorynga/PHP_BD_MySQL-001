@@ -1,3 +1,4 @@
+
 <?php include_once("conexao.php") ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -43,7 +44,7 @@
                 <?php
                     $sql = "SELECT *FROM tbCategoria ORDER BY nmcategoria asc";
                     $registros = $conn->query($sql);
-                    while ($exibir =$registros->fetch_assoc()){
+                    while ($exibir=$registros->fetch_assoc()){
                 ?>
                 <option value="<?php echo $exibir["idCategoria"]?>"
                     <?php echo ($exibir["idCategoria"]==$produto["idCategoria"])?"selected":"" ?>>
